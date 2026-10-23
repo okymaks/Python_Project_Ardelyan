@@ -8,26 +8,24 @@ while True:
         Y = float(input("Введите массу ирисок "))
         B = float(input("Введите цену ирисок "))
 
-        if X <= 0 or Y <= 0 or A <= 0 or B <= 0:
-            print("Масса или не может быть равна нулю, и не может быть буквой")
-            exit()
-
-        XA = A / X
-        YB = B / Y
-        Otn = XA / YB
-        print(f"Цена 1кг шок. конфет: {XA:.1f} руб\nЦена 1кг ирисок: {YB:.1f}руб")
-        if Otn == 1:
-            print("Их цена одинакова\n\n")
-        elif Otn <= 1:
-            print(f"Ириски дороже шок. конфет в {YB/XA:.1f} раз\n\n")
-        else:
-            print(f"Шок. конфеты дороже ирисок в {Otn:.1f} раз\n\n")
-
     except ValueError:
         print("Нужно вводить числа")
-    except ZeroDivisionError:
-        print("Ошибка: деление на нуль невозможно")
+        exit()
 
+    if X <= 0 or Y <= 0 or A <= 0 or B <= 0:
+        print("Масса или цена не может быть равна нулю, и не может быть буквой")
+        exit()
+
+    XA = A / X
+    YB = B / Y
+    Otn = XA / YB
+    print(f"Цена 1кг шок. конфет: {XA:.1f} руб\nЦена 1кг ирисок: {YB:.1f}руб")
+    if Otn == 1:
+        print("Их цена одинакова\n")
+    elif Otn <= 1:
+        print(f"Ириски дороже шок. конфет в {YB/XA:.1f} раз\n")
+    else:
+        print(f"Шок. конфеты дороже ирисок в {Otn:.1f} раз\n")
 
 
 
