@@ -10,6 +10,7 @@ while True:
 
     break
 
+
 if A % 2 == 1:
     print("Верно, Число A нечетное")
 else:

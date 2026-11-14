@@ -18,6 +18,7 @@ while True:
 
     break
 
+
 XA = A / X
 YB = B / Y
 Otn = XA / YB

@@ -14,6 +14,7 @@ while True:
 
     break
 
+
 if X <= 0:
     print("Сумма вклада не может быть равна нулю")
     exit()
