@@ -6,7 +6,7 @@ while True:
         X = int(input("Введите ваше число "))
 
     except ValueError:
-        print("Нужно вводить целые числа")
+        print("Нужно вводить ццелые числа")
         exit()
 
     break
